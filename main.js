@@ -76,7 +76,7 @@ function createWindow () {
     }
   },1*1000);
 
-  var trayIcon = new Tray(nativeImage.createFromPath(__dirname + "/icon.png"));
+  var trayIcon = new Tray(nativeImage.createFromPath(__dirname + "assets/icon.png"));
     // タスクトレイに右クリックメニューを追加
     const contextMenu = Menu.buildFromTemplate([
         { label: "環境設定",
