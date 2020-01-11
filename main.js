@@ -71,12 +71,12 @@ function createWindow () {
     prev_mousePos = mousePos;
     
     console.log(prev_mousePos, mousePos, counter);
-    if(counter > 5){
+    if(counter > 10){
       openScreenSaver();
     }
   },1*1000);
 
-  var trayIcon = new Tray(nativeImage.createFromPath(__dirname + "assets/icon.png"));
+  var trayIcon = new Tray(nativeImage.createFromPath(__dirname + "/icon-mini.png"));
     // タスクトレイに右クリックメニューを追加
     const contextMenu = Menu.buildFromTemplate([
         { label: "環境設定",
