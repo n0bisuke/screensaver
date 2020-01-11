@@ -71,7 +71,7 @@ function createWindow () {
     prev_mousePos = mousePos;
     
     console.log(prev_mousePos, mousePos, counter);
-    if(counter > 2){
+    if(counter > 5){
       openScreenSaver();
     }
   },1*1000);
@@ -105,9 +105,9 @@ function createWindow () {
     trayIcon.setToolTip(app.name);
 
     // タスクトレイが左クリックされた場合、アプリのウィンドウをアクティブに
-    trayIcon.on("clicked", function () {
-        mainWindow.focus();
-    });
+    // trayIcon.on("clicked", function () {
+    //     mainWindow.focus();
+    // });
 }
 
 // This method will be called when Electron has finished
